@@ -1,2 +1,42 @@
-/* some style */
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: black;
+  background: #f5f5f5; }
 
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 20px;
+  justify-content: space-between; }
+  .cards-container .card {
+    flex: 1 1 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 20px; }
+    .cards-container .card .card-wrapper {
+      display: flex;
+      flex-direction: column; }
+      .cards-container .card .card-wrapper .card-header {
+        background: #f5f5f5;
+        padding: 80px;
+        position: relative; }
+        .cards-container .card .card-wrapper .card-header.red {
+          background: red; }
+        .cards-container .card .card-wrapper .card-header.orange {
+          background: orange; }
+        .cards-container .card .card-wrapper .card-header.yellow {
+          background: yellow; }
+        .cards-container .card .card-wrapper .card-header.green {
+          background: green; }
+        .cards-container .card .card-wrapper .card-header label {
+          color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 20px;
+          font-size: 1.5rem; }
+      .cards-container .card .card-wrapper .card-body {
+        padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+$red: red;
+$orange: orange;
+$yellow: yellow;
+$green: green;
+$blue: blue;
+$interesting: yellowgreen;
+$purple: purple;
+
+$black: black;
+$white: white;
+$light: #f5f5f5;
+$trans: transparent;
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: $black;
+  background: $light;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  background: $white;
+  padding: 20px;
+  justify-content: space-between;
+
+  .card {
+    flex: 1 1 auto;
+    box-shadow: 0 2px 10px rgba($black, 0.4);
+    margin-right: 20px;
+
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .card-header {
+        background: $light;
+        padding: 80px;
+        position: relative;
+
+        &.red { background: $red }
+        &.orange { background: $orange }
+        &.yellow { background: $yellow }
+        &.green { background: $green }
+
+        label {
+          color: $white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 20px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+    }
+  }
+}
