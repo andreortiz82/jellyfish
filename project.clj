@@ -11,9 +11,10 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async  "0.4.474"]
-                 [sablono "0.7.4"]
                  [cljsjs/react "15.2.1-1"]
-                 [cljsjs/react-dom "15.2.1-1"]]
+                 [cljsjs/react-dom "15.2.1-1"]
+                 [sablono "0.7.4"]
+                 [rum "0.11.3"]]
 
   :plugins [[lein-figwheel "0.5.16"]
             [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]

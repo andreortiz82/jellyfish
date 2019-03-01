@@ -23,7 +23,6 @@
       (card {:color "yellow" :title "Yellow" :url "http://google.com" :text "Bordered type just draws a line between content and actions."})
       (card {:color "green" :title "Green" :url "http://google.com" :text "Bordered type just draws a line between content and actions."})]))
 
-
 (defn render! []
   (.render js/ReactDOM
            (app app-state)
