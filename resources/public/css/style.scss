@@ -3,12 +3,14 @@ $orange: orange;
 $yellow: yellow;
 $green: green;
 $blue: blue;
+$light-blue: #33BBFF;
 $interesting: yellowgreen;
 $purple: purple;
 
 $black: black;
 $white: white;
 $light: #f5f5f5;
+$grey: #F1F1F1;
 $trans: transparent;
 
 body {
@@ -22,13 +24,15 @@ body {
   display: flex;
   flex-direction: row;
   background: $white;
-  padding: 20px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 
   .card {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     box-shadow: 0 2px 10px rgba($black, 0.4);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 20%;
 
     .card-wrapper {
       display: flex;
@@ -39,7 +43,7 @@ body {
         padding: 80px;
         position: relative;
 
-        &.red { background: $red }
+        &.red { background: $blue }
         &.orange { background: $orange }
         &.yellow { background: $yellow }
         &.green { background: $green }
@@ -58,5 +62,34 @@ body {
         padding: 20px;
       }
     }
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px 0;
+  width: 80%;
+
+  input {
+    border: 1px solid $grey;
+    border-radius: 4px;
+    flex: 1 1 auto;
+    height: 40px;
+    margin-right: 20px;
+    text-indent: 20px;
+    outline: none;
+  }
+
+  button {
+    background: $light-blue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 10px;
+    width: 100px;
+    outline: none;
+
   }
 }
